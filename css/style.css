@@ -1,0 +1,38 @@
+body
+{
+    width: 100%;
+
+    text-align: center;
+
+    background: #fff;
+}
+
+.button
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 20vh auto 20px;
+    padding: 10px;
+
+    color: #fff;
+    border: 0;
+    outline: none;
+    background: #f00;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+
+.button:hover
+{
+    background: #000;
+}
+
+a#link
+{
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ff0000;
+
+    text-decoration:none;
+}
