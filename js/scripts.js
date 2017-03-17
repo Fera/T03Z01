@@ -13,7 +13,7 @@ function geoFindMe() {
         var latitude  = position.coords.latitude,
             longitude = position.coords.longitude,
             hotText = 'Bing Maps',
-            URL = 'http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&pp=' + latitude + ',' + longitude + ';113&lvl=17&&rtp=pos.' + latitude + '_' + longitude;
+            URL = 'http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&pp=' + latitude + ',' + longitude + ';113&lvl=17&rtp=pos.' + latitude + '_' + longitude;
 
         output.innerHTML = '<p>Szerokość geograficzna: <b>' + latitude + '°</b> <br>Długość geograficzna: <b>' + longitude + '°</b></p>';
 
