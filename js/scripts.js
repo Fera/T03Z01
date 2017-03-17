@@ -13,14 +13,11 @@ function geoFindMe() {
         var latitude  = position.coords.latitude,
             longitude = position.coords.longitude,
             hotText = 'Bing Maps',
-            URL = 'http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&pp=' + latitude + ',' + longitude + ';113&lvl=17&rtp=pos.' + latitude + '_' + longitude;
+            URL = 'http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&lvl=17&rtp=pos.' + latitude + '_' + longitude;
+
+            // URL = 'http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&pp=' + latitude + ',' + longitude + ';113&lvl=17'; - z pushpin (nie działa)
 
         output.innerHTML = '<p>Szerokość geograficzna: <b>' + latitude + '°</b> <br>Długość geograficzna: <b>' + longitude + '°</b></p>';
-
-        // var hotText="Bing Maps";
-        // var URL='http://bing.com/maps/default.aspx?cp=' + latitude + '~' + longitude + '&lvl=17&point.' + latitude + '_' + longitude + '_LINE_some notes_http://bing.com__%2300ff00__4px_Single_Solid' ;
-
-
 
         link.innerHTML = 'Pokaż lokalizację w ' + hotText;
         link.href = URL;
